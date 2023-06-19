@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "montserrat", sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 400px;
+  background-color: #2e3267;
+}
+
+.flex-container {
+  color: #fff;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  padding: 2rem 5rem;
+  padding-top: 5rem;
+}
+
+/* category container */
+.categories-container {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 1rem;
+  align-items: start;
+}
+
+.categories-container h1 {
+  font-size: 2.1rem;
+}
+
+.categories-container p {
+  color: #fffffff1;
+}
+
+.learn-more-btn {
+  padding: 0.6rem 1.2rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+/* box container */
+.box-container {
+  width: 65%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.single-box {
+  width: 30%;
+  padding: 1rem;
+  margin: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  border-radius: 0.7rem;
+  background-color: #424890;
+}
+
+/* box buttons */
+.uil-bitcoin-sign {
+  padding: 0.4rem;
+  width: 40px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #5963fd;
+}
+
+.uil-palette {
+  padding: 0.4rem;
+  width: 40px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #f34906;
+}
+
+.uil-usd-circle {
+  padding: 0.4rem;
+  width: 40px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #00ca65;
+}
+
+.uil-megaphone {
+  padding: 0.4rem;
+  width: 40px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #f5e400;
+}
+
+.uil-music {
+  padding: 0.4rem;
+  width: 40px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #00ca65;
+}
+
+.uil-puzzle-piece {
+  padding: 0.4rem;
+  width: 40px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #5963fd;
+}
+
+/* responsive part */
+
+@media screen and (max-width: 850px) {
+  .container {
+    height: auto;
+  }
+  .flex-container {
+    flex-direction: column;
+    padding: 1rem 1rem;
+  }
+
+  .categories-container {
+    width: 100%;
+    margin-bottom: 2rem;
+    padding: 0 2rem;
+  }
+
+  .box-container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 668px) {
+  .single-box {
+    width: 43%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .categories-container {
+    padding: 0 1rem;
+  }
+
+  .single-box {
+    width: 90%;
+  }
+}
